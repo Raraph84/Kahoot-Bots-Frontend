@@ -1,6 +1,6 @@
 {
   "name": "kahoot-bots-frontend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A ReactJS-based frontend for the Kahoot Bots backend",
   "keywords": [
     "kahoot"
