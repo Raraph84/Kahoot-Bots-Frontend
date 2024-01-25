@@ -1,0 +1,172 @@
+@import url("https://api.fontshare.com/v2/css?f[]=chillax");
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chillax", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #152A38;
+    color: white;
+    padding: 10vh 15vw;
+    text-align: center;
+
+    @media screen and (orientation: portrait) {
+        padding: 5vh 5vw;
+    }
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 600;
+
+    @media screen and (orientation: portrait) {
+        font-size: 40px;
+    }
+}
+
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 25px;
+        border-radius: 15px;
+        background-color: #29435C;
+        font-size: 20px;
+
+        .box-title {
+            font-size: 22px;
+        }
+
+        button {
+            padding: 5px 15px;
+            border-width: 0;
+            border-radius: 5px;
+            background-color: #1A3041;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (orientation: portrait) {
+        align-items: stretch;
+
+        .box {
+            padding: 20px 25px;
+        }
+    }
+}
+
+.bots {
+    .bot button {
+        font-size: 14px;
+        padding: 3px 10px;
+    }
+}
+
+.a2f {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &>span {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    button {
+
+        &.red {
+            background-color: red;
+        }
+
+        &.green {
+            background-color: green;
+        }
+
+        &.yellow {
+            background-color: yellow;
+            color: black;
+        }
+
+        &.blue {
+            background-color: blue;
+        }
+
+        &:disabled {
+            background-color: #1A3041;
+            color: gray;
+            cursor: default;
+        }
+    }
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    &>div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &.red {
+            background-color: red;
+        }
+
+        &.green {
+            background-color: green;
+        }
+
+        &.yellow {
+            background-color: yellow;
+            color: black;
+        }
+
+        &.blue {
+            background-color: blue;
+        }
+
+        &:disabled {
+            background-color: #1A3041;
+            color: gray;
+            cursor: default;
+        }
+    }
+}
+
+.loading i {
+    font-size: 42px;
+    animation: spin 1s infinite linear;
+}
